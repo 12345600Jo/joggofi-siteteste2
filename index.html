@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGGOFI - Te Marca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilo Geral */
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
+        
+        /* Cabeçalho */
+        header { 
+            background: white; 
+            padding: 20px; 
+            border-bottom: 1px solid #eee; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .logo-container img {
+            max-width: 180px; /* Ajuste o tamanho do seu logo aqui */
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Barra de Busca Estilo Nuvemshop */
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #e1e1e1;
+            border-radius: 4px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-bar button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Container de Produtos */
+        .container { 
+            max-width: 1100px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 30px; 
+        }
+
+        /* Card do Produto */
+        .product-card { 
+            background: white; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            transition: 0.3s;
+            border: 1px solid #f0f0f0;
+        }
+
+        .product-card:hover { 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transform: translateY(-5px);
+        }
+
+        .image-placeholder {
+            background-color: #f0f0f0;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 50px;
+        }
+
+        .product-info { padding: 20px; text-align: left; }
+        
+        .product-title { 
+            font-size: 14px; 
+            color: #777; 
+            margin-bottom: 8px; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .price { 
+            font-size: 20px; 
+            font-weight: 800; 
+            color: #000; 
+            margin-bottom: 20px; 
+        }
+
+        /* Botão de Compra */
+        .btn-add { 
+            background-color: #1a1a1a; 
+            color: white; 
+            padding: 15px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-weight: bold; 
+            font-size: 13px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-add:hover { background-color: #444; }
+
+        /* WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            text-decoration: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="https://via.placeholder.com/180x60?text=JOGGOFI" alt="JOGGOFI Logo">
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="O que você está procurando?">
+        <button><i class="fa fa-search"></i></button>
+    </div>
+</header>
+
+<div class="container">
+    <div class="product-card">
+        <div class="image-placeholder"><i class="fa fa-tshirt"></i></div>
+        <div class="product-info">
+            <div class="product-title">Coleção 2026</div>
+            <div class="product-name">Camiseta JOGGOFI Classic</div>
+            <div class="price">R$ 129,90</div>
+            <button class="btn-add">ADICIONAR AO CARRINHO</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder"><i class="fa fa-tshirt"></i></div>
+        <div class="product-info">
+            <div class="product-title">Acessórios</div>
+            <div class="product-name">Boné Te Marca Premium</div>
+            <div class="price">R$ 89,90</div>
+            <button class="btn-add">ADICIONAR AO CARRINHO</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder"><i class="fa fa-tshirt"></i></div>
+        <div class="product-info">
+            <div class="product-title">Coleção 2026</div>
+            <div class="product-name">Moletom Street JOGGOFI</div>
+            <div class="price">R$ 249,90</div>
+            <button class="btn-add">ADICIONAR AO CARRINHO</button>
+        </div>
+    </div>
+</div>
+
+<a href="https://wa.me/5500999999999" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
